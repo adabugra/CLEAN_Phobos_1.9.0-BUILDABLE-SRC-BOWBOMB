@@ -37,14 +37,14 @@ public class Bow32k extends Module
     
     public Bow32k() {
         super("Bow32k", "One Shots Players", Category.MISC, true, false, false);
-        this.Bows = (Setting<Boolean>)this.register(new Setting("Bows", (T)true));
-        this.pearls = (Setting<Boolean>)this.register(new Setting("Pearls", (T)true));
-        this.eggs = (Setting<Boolean>)this.register(new Setting("Eggs", (T)true));
-        this.snowballs = (Setting<Boolean>)this.register(new Setting("SnowBalls", (T)true));
-        this.Timeout = (Setting<Integer>)this.register(new Setting("Timeout", (T)5000, (T)100, (T)20000));
-        this.spoofs = (Setting<Integer>)this.register(new Setting("Spoofs", (T)10, (T)1, (T)300));
-        this.bypass = (Setting<Boolean>)this.register(new Setting("Bypasses", (T)false));
-        this.debug = (Setting<Boolean>)this.register(new Setting("DebugOnToggle", (T)false));
+        this.Bows = (Setting<Boolean>)this.register(new Setting("Bows", true));
+        this.pearls = (Setting<Boolean>)this.register(new Setting("Pearls", true));
+        this.eggs = (Setting<Boolean>)this.register(new Setting("Eggs", true));
+        this.snowballs = (Setting<Boolean>)this.register(new Setting("SnowBalls", true));
+        this.Timeout = (Setting<Integer>)this.register(new Setting("Timeout", 5000, 100, 20000));
+        this.spoofs = (Setting<Integer>)this.register(new Setting("Spoofs", 10, 1, 300));
+        this.bypass = (Setting<Boolean>)this.register(new Setting("Bypasses", false));
+        this.debug = (Setting<Boolean>)this.register(new Setting("DebugOnToggle", false));
     }
     
     @Override
